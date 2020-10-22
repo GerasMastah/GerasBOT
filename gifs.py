@@ -3,7 +3,7 @@ import requests
 import random
 from giphy_client.rest import ApiException
 
-giphy_token = 'OnOYLoTy58izvRaeifGnSVECG8EteKzh'
+giphy_token = 'TOKEN'
 api_instance = giphy_client.DefaultApi() 
 #################Random Gifs#######################
 
