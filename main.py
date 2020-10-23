@@ -6,7 +6,7 @@ from music import *
 from gifs import *
 
 
-discord_token = 'NzY3OTE0NzA5OTQ4NTYzNDY3.X442Tg.PJpghPzKLkftT9TweIkQ40kghIM'
+discord_token = 'TOKEN'
 
 bot = Bot(command_prefix='+')
 
