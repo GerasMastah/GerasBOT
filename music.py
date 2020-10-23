@@ -77,7 +77,7 @@ async def play_song(ctx, search):
 
         await ctx.send('> **Cancion agregada a la cola** ')
         queue.append(get_video_url(yt_search(search)))
-        print(len(queue))
+        
 
 
 
@@ -85,13 +85,14 @@ async def next_song():
     player.stop()
     player.play(discord.FFmpegPCMAudio(queue[0]))
     queue.pop(0)
-    print(len(queue))
+    
     
 
 ##'''Detiene la reproduccion de Audio'''
 
 async def stop_song():
     player.stop()
+    queue = []
 
 
 ##''Pausa el audio''

@@ -1,27 +1,14 @@
 from __future__ import unicode_literals
-##from youtube_dl import YoutubeDL    ##Music
 from discord.ext.commands import Bot
-##from giphy_client.rest import ApiException
 from discord.ext import commands
-##from discord import FFmpegPCMAudio
-##from discord.utils import get
-##from discord.voice_client import VoiceClient
-##import random         ##gifs
 import asyncio
-##import requests           ##gifs
-##import youtube_dl           ##Music
-##import discord, time    ##Music
-##import giphy_client       ##gifs
-##import subprocess
-##import urllib.request      ##Music
-##import re                  ##Music
 from music import *
 from gifs import *
 
 
-discord_token = 'TOKEN'
+discord_token = 'NzY3OTE0NzA5OTQ4NTYzNDY3.X442Tg.YsalFNdk7lbl3LtlB353r4ofRH4'
 
-bot = Bot(command_prefix='?')
+bot = Bot(command_prefix='+')
 
 client = discord.Client()
 
@@ -51,7 +38,7 @@ async def _next_song(ctx):
 
 @bot.command(aliases=['s', 'stop'])
 async def _stop(ctx):
-    await stop_song(ctx)
+    await stop_song()
 
 
 @bot.command(aliases=['gif', 'Gif'])

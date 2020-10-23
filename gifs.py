@@ -3,7 +3,7 @@ import requests
 import random
 from giphy_client.rest import ApiException
 
-giphy_token = 'TOKEN'
+giphy_token = 'OnOYLoTy58izvRaeifGnSVECG8EteKzh'
 api_instance = giphy_client.DefaultApi() 
 #################Random Gifs#######################
 
@@ -44,7 +44,7 @@ async def gfycat_search(ctx, word):
     ##'''Selecciona un gif al azar utilizando la funcion random'''
         gifs = (len(data["gfycats"])-1)
         rnd = random.randint(0,gifs)
-        gif = data["gfycats"][rnd]["max2mbGif"]
+        gif = data["gfycats"][rnd]["max5mbGif"]
 
     ##'''Envia el gif seleccionado en el chat'''
         await ctx.send('sbs Papuh :v' )
